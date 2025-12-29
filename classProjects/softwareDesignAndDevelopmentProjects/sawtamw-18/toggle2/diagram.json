@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Wah Saw Tamalar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 120, "left": 20, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 72,
+      "left": 66.65,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -13.2, "left": 51.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button_red",
+      "top": 35,
+      "left": 336,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rB",
+      "top": 216,
+      "left": -77.35,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rC",
+      "top": 206.4,
+      "left": 297.05,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -13.2,
+      "left": 138.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "button_green",
+      "top": 6.2,
+      "left": 192,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rG",
+      "top": 72,
+      "left": 133.85,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "led1:C", "black", [] ],
+    [ "r1:1", "led1:A", "red", [] ],
+    [ "uno:13", "r1:2", "red", [] ],
+    [ "uno:GND.2", "rB:2", "black", [] ],
+    [ "uno:5V", "button_red:1.r", "red", [] ],
+    [ "uno:8", "button_red:2.l", "blue", [] ],
+    [ "uno:8", "rB:1", "white", [] ],
+    [ "uno:GND.2", "led2:C", "yellow", [] ],
+    [ "rG:1", "led2:A", "green", [] ],
+    [ "uno:12", "rG:2", "green", [] ],
+    [ "uno:GND.4", "rG:2", "black", [] ],
+    [ "uno:5V", "button_green:1.r", "green", [] ],
+    [ "uno:7", "button_green:2.l", "green", [] ],
+    [ "uno:GND.3", "rC:2", "yellow", [] ],
+    [ "uno:7", "rC:1", "yellow", [] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,17 @@
+* {
+    background-color: chocolate;
+    color: aliceblue;
+}
+
+table {
+    border: 2px solid black;
+}
+
+table td {
+    border: 2px solid black;
+}
+
+table th {
+    border: 2px solid black;
+}
+

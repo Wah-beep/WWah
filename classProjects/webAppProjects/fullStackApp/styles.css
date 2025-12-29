@@ -1,0 +1,52 @@
+/*
+    Wah Saw Tamalar
+    styles.css
+*/
+
+body {
+    background-color: rgb(14, 87, 160);
+    color: rgb(228, 173, 255);
+    padding: 5%;
+    gap: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "head head"
+    "team image";
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    grid-area: head;
+}
+
+.teamsListContainer {
+    grid-area: team;
+    font-size: 20px;
+}
+
+.imageContainer {
+    grid-area: image;
+}
+
+img {
+    width: 350px;
+    border-radius: 5px;
+}
+
+#playerNav {
+    text-decoration: underline;
+}
+
+/*
+    players.html
+*/
+.teamLogoContainer {
+    grid-area: head;
+}
+
+.playersContainer {
+    grid-area: team;
+    font-size: 20px;
+}

@@ -1,0 +1,65 @@
+/*
+    Wah Saw Tamalar
+    stylesheet.css
+*/
+
+/*
+    Background main color is steelblue.
+    Text main color is antiquewhite.
+*/
+* {
+    background-color: steelblue;
+    color: antiquewhite;
+}
+
+/*
+    Image size is 400px with 3px white border and 5px broder radius.
+*/
+img {
+    width: 400px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+/*
+    Body texts and contents are center.
+    Layout is grid style. Head(header) is on the top and below is lists and details.
+    lists is left and details is right.
+*/
+body {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "head head"
+    "lists details";
+    gap: 20px;
+    padding: 20px;
+}
+
+/*
+    header/title at the top
+*/
+.header {
+    grid-area: head;
+}
+
+/*
+    lists at left.
+    Text is to the left.
+*/
+.foodListContainer {
+    grid-area: lists;
+    font-size: 25px;
+    text-align: start;
+}
+
+/*
+    details at right.
+*/
+.foodDetails {
+    grid-area: details;
+    font-size: 20px;
+}
+

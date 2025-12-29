@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+    Wah Saw Tamalar
+    index.html
+    Starting page, user can click on the team name
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Teams</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="teams.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>List of Teams</h2>
+    </div>
+    <div class="teamsListContainer">
+        <ul id="teamList">
+            <!--JavaScript adds on-->
+        </ul>
+    </div>
+    <div class="imageContainer">
+        <img id="teamImage" src="images/teams/chelsea.png" alt="chelsea">
+        <p>
+            Arena/Stadium: <span id="teamStadium"></span><br>
+            Location: <span id="teamLocation"></span><br>
+            Founded: <span id="teamFounded"></span><br>
+        </p>
+        <nav id="playerNav">View Players</nav>
+    </div>
+</body>
+</html>

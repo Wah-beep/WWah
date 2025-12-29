@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Wah Saw Tamalar
+    index.html
+    Editable Address Book
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+    <!--Current jQuery Version-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="introContainer">
+        <h1>Hi, Welcome!</h1>
+    </div>
+
+    <div class="userInputContainer">
+        <p>Input</p>
+        <ul id="userInput">
+            <li>Name: 
+                <input type="text" id="userName">
+            </li>
+            <li>Street Name: 
+                <input type="text" id="userStreetName">
+            </li>
+            <li>House Number: 
+                <input type="number" id="userHouseNumber">
+            </li>
+            <li>Country: 
+                <input type="text" id="userCountry">
+            </li>
+            <li>Postal Code: 
+                <input type="number" id="userPostalCode">
+            </li>
+            <li>Phone Number: 
+                <input type="tel" id="userPhoneNumber">
+            </li>
+        </ul>
+        <input type="submit" id="submitBtn">
+        <input type="submit" id="editBtn" value="Edit">
+        <input type="submit" id="saveBtn" value="Save">
+        <input type="submit" id="deleteBtn" value="Delete">
+    </div>
+    
+    <div class="userListContainer">
+        <h2>List of Contacts</h2>
+        <ul id="userList">
+            <!--JS add on-->
+        </ul>
+    </div>
+
+    <div class="userDisplayContainer">
+        <p>Display</p>
+        <ul id="userDisplay">
+            <li>Name: <span id="contactName"></span></li>
+            <li>Street Name: <span id="contactStreetName"></span></li>
+            <li>House Number: <span id="contactHouseNumber"></span></li>
+            <li>Country: <span id="contactCountry"></span></li>
+            <li>Postal Code: <span id="contactPostalCode"></span></li>
+            <li>Phone Number: <span id="contactPhoneNumber"></span></li>
+            <li>City: <span id="contactCity"></span></li>
+            <li>State: <span id="contactState"></span></li>
+        </ul>
+    </div>
+</body>
+</html>

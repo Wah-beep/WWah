@@ -1,0 +1,49 @@
+/**
+    Wah Saw Tamalar
+    style.css
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 95, 34);
+    color: rgb(245, 245, 220);
+    display: grid;
+    grid-template-columns: 40% 20% auto;
+    grid-template-areas: 
+    "intro intro intro"
+    "input list info";
+    gap: 20px;
+    padding: 20px;
+}
+
+.introContainer {
+    grid-area: intro;
+    padding-left: 2%;
+}
+
+.userInputContainer {
+    grid-area: input;
+    background-color: rgb(51, 96, 0);
+    padding-left: 2%;
+}
+
+.userInputContainer ul li {
+    padding: 5px;
+}
+
+.userListContainer {
+    grid-area: list;
+    background-color: rgb(51, 96, 0);
+    padding-left: 2%;
+}
+
+.userDisplayContainer {
+    grid-area: info;
+    background-color: rgb(51, 96, 0);
+    padding-left: 2%;
+}
+
+

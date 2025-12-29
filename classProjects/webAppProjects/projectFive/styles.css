@@ -1,0 +1,28 @@
+/*
+    Wah Saw Tamalar
+    styles.css
+*/
+
+body {
+    background-color: crimson;
+    color: rgb(127, 255, 0);
+    padding: 2%;
+}
+
+/*
+    First page, player textbox in the center
+*/
+.enterUserContainer {
+    text-align: center;
+    background-color: rgb(145, 14, 40);
+    gap: 20px;
+    padding: 50px;
+}
+
+/*
+    Second page
+*/
+.playerInputContainer, .guessContainer, .playerRecordContainer {
+    padding: 20px;
+    gap: 20px;
+}

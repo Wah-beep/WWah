@@ -1,0 +1,101 @@
+body{
+    background-color: blue;
+}
+header{
+    background-color: yellow;
+    border-radius: 5px;
+    border-style: dashed;
+}
+footer{
+    background-color: yellow;
+}
+#tblack{
+    color: black;
+}
+#tyellow{
+    color: yellow;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.tblack{
+    color: black;
+}
+.tyellow{
+    color: yellow;
+    font-family: EduSAHand, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+@font-face {
+    font-family: EduSAHand;
+    font-weight: bold;
+    src: url(fonts/Edu_SA_Hand\,Roboto/Edu_SA_Hand/EduSAHand-VariableFont_wght.ttf);
+}
+#borderEx1{
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-shadow: 3px 3px 5px blue, 3px 3px 5px yellow;
+}
+#logo1{
+    filter: drop-shadow(5px 5px 10px black);
+}
+.box{
+    border: 5px solid yellow;
+    width: 175px;
+    height: 175px;
+    font-size: 50px;
+    display: grid;
+    place-items: center;
+}
+#box3border{
+    border: 5px solid black;
+    display: grid;
+    place-items: center;
+}
+#box1{
+    border-color: black;
+    background-color: blue;
+    color: yellow;
+    margin-left: auto;
+    float: left;
+}
+#box2{
+    border-color: blue;
+    background-color: yellow;
+    color: black;
+    margin: auto;
+}
+#box3{
+    background-color: black;
+    color: blue;
+    margin-right: auto;
+}
+#img1{
+    float: left;
+    margin-right: 5px;
+    
+}
+#img2{
+    float: right;
+    margin-left: auto;
+}
+#floatborder{
+    border: 5px solid blue;
+    display: flow-root;
+}
+#borderimg1{
+    border: 5px solid black;
+    display: flow-root;
+}
+#borderimg2{
+    border: 5px solid yellow;
+    display: flow-root;
+}
+#overflowparagraph{
+    border: 5px solid black;
+    overflow: auto;
+    height: 150px;
+}
+p{
+    margin-left: 5px;
+}

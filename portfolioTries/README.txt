@@ -1,0 +1,1 @@
+Tries of making portfolio and learning from online

@@ -1,0 +1,13 @@
+# Ignore all .class files (compiled Java classes)
+*.class
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore the docs folder (generated Javadocs)
+docs
+
+# Ignore HTML and CSS files (if any)
+*.html
+*.css
+.DS_Store
