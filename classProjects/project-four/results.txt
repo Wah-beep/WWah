@@ -1,0 +1,276 @@
+// True
+19 ?- is_male( bart).
+bart is a male.
+true .
+
+20 ?- is_male( skippy).
+skippy is a male.
+true .
+
+// False
+21 ?- is_male( lisa).
+lisa is not a male.
+true.
+
+// True
+22 ?- is_female( lisa).
+lisa is a female.
+true .
+
+23 ?- is_female( ling).
+ling is a female.
+true .
+
+// False
+24 ?- is_female( clancy).
+clancy is not a female.
+true.
+
+// True
+25 ?- is_parent( clancy, marge).
+clancy is a parent of marge
+true .
+
+26 ?- is_parent( homer, bart).
+homer is a parent of bart
+true .
+
+// False
+27 ?- is_parent(clancy, homer).
+clancy is not a parent of homer
+true.
+
+// True
+28 ?- is_married( bart, jenda).
+bart is married to jenda
+true .
+
+29 ?- is_married( clancy, jacqueline).
+clancy is married to jacqueline
+true .
+
+// False
+30 ?- is_married( bart, milhouse).
+bart is not married to milhouse
+true.
+
+// True
+31 ?- is_mother( lisa, zia).
+lisa is a mother of zia
+true .
+
+32 ?- is_mother( marge, lisa).
+marge is a mother of lisa
+true .
+
+// False
+33 ?- is_mother( marge, zia).
+marge is not a mother of zia
+true.
+
+
+// True
+34 ?- is_father( homer, bart).
+homer is a father of bart
+true .
+
+35 ?- is_father( homer, lisa).
+homer is a father of lisa
+true .
+
+// False
+36 ?- is_father( homer, milhouse).
+homer is not a father of milhouse
+true.
+
+// True
+37 ?- is_sibling( marge, patty).
+marge is a sibling of patty
+true .
+
+38 ?- is_sibling( bart, lisa).
+bart is a sibling of lisa
+true .
+
+// False
+39 ?- is_sibling( skippy, zia).
+skippy is not a sibling of zia
+true.
+
+// True
+40 ?- is_brother( bart, lisa).
+bart is a brother of lisa
+true .
+
+41 ?- is_brother( skippy, jiff).
+skippy is a brother of jiff
+true .
+
+
+// False
+42 ?- is_brother( skippy, zia).
+skippy is not a brother of zia
+true.
+
+// True
+43 ?- is_sister( lisa, bart).
+lisa is a sister of bart
+true .
+
+44 ?- is_sister( marge, selma).
+marge is a sister of selma
+true .
+
+
+// False
+45 ?- is_sister( selma, homer).
+selma is not a sister of homer
+true.
+
+// True
+46 ?- is_grandparent( abraham, bart).
+abraham is a grandparent of bart
+true .
+
+47 ?- is_grandparent( clancy, ling). 
+clancy is a grandparent of ling
+true .
+
+// False
+48 ?- is_grandparent( abraham, skippy).
+abraham is not a grandparent of skippy
+true.
+
+// True
+49 ?- is_grandfather( abraham, lisa).
+abraham is a grandfather of lisa
+true .
+
+50 ?- is_grandfather( abraham, maggie).
+abraham is a grandfather of maggie
+true .
+
+// False
+51 ?- is_grandfather( jacqueline, maggie).
+jacqueline is not a grandfather of maggie
+true.
+
+// True
+52 ?- is_grandmother( jacqueline, maggie).
+jacqueline is a grandmother of maggie
+true .
+
+53 ?- is_grandmother( marge, jiff).
+marge is a grandmother of jiff
+true .
+
+// False
+54 ?- is_grandmother( marge, ling).
+marge is not a grandmother of ling
+true.
+
+// True
+55 ?- is_ancestor( abraham, jiff).
+abraham is a ancestor of jiff
+true .
+
+56 ?- is_ancestor( abraham, zia).
+abraham is a ancestor of zia
+true .
+
+// False
+57 ?- is_ancestor( abraham, ling).
+abraham is not a ancestor of ling
+true.
+
+// True
+58 ?- is_aunt( lisa, jiff).
+lisa is an aunt of jiff
+true .
+
+59 ?- is_aunt( lisa, skippy).
+lisa is an aunt of skippy
+true .
+
+// False
+60 ?- is_aunt( lisa, ling).
+lisa is not an aunt of ling
+true.
+
+// True
+61 ?- is_uncle( bart, zia).
+bart is an uncle of zia
+true .
+
+// False
+62 ?- is_uncle( lisa, jiff).
+lisa is not an uncle of jiff
+true.
+
+// True
+63 ?- is_cousin( lisa, ling).
+lisa is a cousin of ling
+true .
+
+64 ?- is_cousin( skippy, zia).
+skippy is a cousin of zia
+true .
+
+// False
+65 ?- is_cousin( zia, ling).
+zia is not a cousin of ling
+true.
+
+// True
+71 ?- is_related( bart, lisa).
+bart is related to lisa
+true .
+
+72 ?- is_related(bart, ling).
+bart is related to ling
+true .
+
+// False
+73 ?- is_related(bart, brian).
+bart is not related to brian
+true.
+
+74 ?- is_related(bart, carter).
+bart is not related to carter
+true.
+
+76 ?- young_parent.
+bart is a young parent 
+true ;
+bart is a young parent 
+true ;
+milhouse is a young parent 
+true ;
+lisa is a young parent 
+true ;
+brian is a young parent 
+true.
+
+77 ?- younger_parent_older_child.
+milhouse is younger than their child zia
+true ;
+lisa is younger than their child zia
+true ;
+brian is younger than their child dylan
+true.
+
+78 ?- count_adults.
+There are 19 adults
+true.
+
+79 ?- count_younger_aunt.
+There are 6 people older than their aunt
+true.
+
+80 ?- count_younger_uncle.
+There are 2 people older than their uncle
+true.
+
+81 ?- count_family.
+There are 9 Families.
+true.
