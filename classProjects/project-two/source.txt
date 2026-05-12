@@ -1,0 +1,8 @@
+foo ID
++ ADD
+bar ID
+( LEFT_PARENTHESIS
+foo1 ID
+, COMMA
+foo2 ID
+) RIGHT_PARENTHESIS
